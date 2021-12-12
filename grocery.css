@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #f8f0e3;
+  /*(background: url("https://wallpaperbat.com/img/405919-wallpaper-line-yellow-sheet-strip-background-wallpaper-field.jpg");*/
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+}
+
+.groceries {
+  background: url("https://wallpaperbat.com/img/405919-wallpaper-line-yellow-sheet-strip-background-wallpaper-field.jpg");
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  width: 600px;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+.groceries h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 15px;
+}
+
+.groceries i {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.groceries input {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  height: 32px;
+  margin: 10px;
+  outline: none;
+  background: none;
+  border: 0;
+  width: 50%;
+  border-bottom: 3px solid black;
+}
+
+#allItems h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .groceries i {
+    font-size: 1.2rem;
+  }
+  .groceries input {
+    width: 60%;
+    font-size: 1rem;
+  }
+  #allItems h2 {
+    margin-left: 25px;
+    font-size: 1.5rem;
+  }
+}
